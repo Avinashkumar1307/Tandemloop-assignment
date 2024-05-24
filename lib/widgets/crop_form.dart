@@ -126,7 +126,7 @@ class _CropFormState extends State<CropForm> {
             },
             child: Text('Add Crop'),
             style: ElevatedButton.styleFrom(
-              primary: Colors.blue, // Button color
+              // primary: Colors.blue, // Button color
               textStyle: TextStyle(
                 fontSize: 18, // Font size of the button text
                 fontWeight: FontWeight.bold, // Bold font weight

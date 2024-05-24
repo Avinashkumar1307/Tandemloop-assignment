@@ -25,12 +25,12 @@ class _SignInScreenState extends State<SignInScreen> {
       showDialog(
         context: context,
         builder: (context) => AlertDialog(
-          title: Text('Invalid User'),
-          content: Text('The username or password is incorrect.'),
+          title: const Text('Invalid User'),
+          content: const Text('The username or password is incorrect.'),
           actions: [
             TextButton(
               onPressed: () => Navigator.pop(context),
-              child: Text('OK'),
+              child: const Text('OK'),
             ),
           ],
         ),

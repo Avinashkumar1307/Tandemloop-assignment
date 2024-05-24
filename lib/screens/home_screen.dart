@@ -1,17 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import '../providers/crop_provider.dart';
+// import 'package:provider/provider.dart';
+// import '../providers/crop_provider.dart';
 import 'crop_list_screen.dart';
 import '../widgets/crop_form.dart';
 
 class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
-    final cropProvider = Provider.of<CropProvider>(context);
+    // final cropProvider = Provider.of<CropProvider>(context);
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           'Farm Buddy',
           style: TextStyle(
             fontSize: 20, // Adjust the font size as needed
@@ -22,7 +24,7 @@ class HomeScreen extends StatelessWidget {
         backgroundColor: Colors.blue, // Background color of the app bar
         actions: [
           IconButton(
-            icon: Icon(Icons.list),
+            icon: const Icon(Icons.list),
             onPressed: () {
               Navigator.of(context).push(
                 MaterialPageRoute(builder: (context) => CropListScreen()),
@@ -32,11 +34,11 @@ class HomeScreen extends StatelessWidget {
         ],
       ),
       body: Padding(
-        padding: EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(16.0),
         child: SingleChildScrollView(
           child: Column(
             children: [
-              Text(
+              const Text(
                 'Manage Your Crops',
                 style: TextStyle(
                   fontSize: 26.0, // Increased font size
@@ -45,8 +47,8 @@ class HomeScreen extends StatelessWidget {
                 ),
                 textAlign: TextAlign.center,
               ),
-              SizedBox(height: 10),
-              Text(
+              const SizedBox(height: 10),
+              const Text(
                 'Keep track of your crops by adding planting and estimated harvest dates. Use the form below to add a new crop to your list.',
                 style: TextStyle(
                   fontSize: 18.0, // Increased font size
@@ -54,7 +56,8 @@ class HomeScreen extends StatelessWidget {
                 ),
                 textAlign: TextAlign.center,
               ),
-              SizedBox(height: 20), // Adding space between the content and form
+              const SizedBox(
+                  height: 20), // Adding space between the content and form
               CropForm(),
             ],
           ),

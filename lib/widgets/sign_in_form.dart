@@ -87,10 +87,10 @@ class _SignInFormState extends State<SignInForm> {
             child: Text('Sign In',
                 style: TextStyle(
                   fontSize: 16.0,
-                  color: Theme.of(context)
-                      .textTheme
-                      .bodyText1
-                      ?.color, // Use theme color
+                  // color: Theme.of(context)
+                  //     .textTheme
+                  //     .bodyText1
+                  //     ?.color, // Use theme color
                 )),
           ),
           SizedBox(height: 20),
@@ -98,10 +98,10 @@ class _SignInFormState extends State<SignInForm> {
             'Or',
             style: TextStyle(
               fontSize: 16.0,
-              color: Theme.of(context)
-                  .textTheme
-                  .bodyText1
-                  ?.color, // Use theme color
+              // color: Theme.of(context)
+              //     .textTheme
+              //     .bodyText1
+              //     ?.color, // Use theme color
             ),
             textAlign: TextAlign.center,
           ),
@@ -118,7 +118,7 @@ class _SignInFormState extends State<SignInForm> {
             style: OutlinedButton.styleFrom(
               padding: EdgeInsets.symmetric(vertical: 15.0),
               textStyle: TextStyle(fontSize: 20.0),
-              primary: Theme.of(context).primaryColor, // Use theme color
+              // primary: Theme.of(context).primaryColor, // Use theme color
             ),
           ),
         ],
